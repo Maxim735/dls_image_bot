@@ -7,7 +7,7 @@ def start_keyboard():
     buttons = [
         types.InlineKeyboardButton(text='\U00002194 Перенести стиль', callback_data='button_style'),
         types.InlineKeyboardButton(text="\U0001F307 Примеры", callback_data="examples"),
-        types.InlineKeyboardButton(text='\U0001F47E Github', url='https://github.com/Maxim735?tab=repositories'),
+        types.InlineKeyboardButton(text='\U0001F47E Github', url='https://github.com/Maxim735/dls_image_bot'),
     ]
     keyboard = types.InlineKeyboardMarkup(row_width=1)
     keyboard.add(*buttons)

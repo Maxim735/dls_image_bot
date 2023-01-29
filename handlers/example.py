@@ -9,9 +9,9 @@ async def transfer_style(call: types.CallbackQuery):
     await types.ChatActions.upload_photo()
     media = types.MediaGroup()
 
-    media.attach_photo(types.InputFile('./images/examples/Village_example.jpg'), 'Деревня Пикассо')
-    media.attach_photo(types.InputFile('./images/examples/Owl_example.jpg'), 'Акварельная сова')
-    media.attach_photo(types.InputFile('./images/examples/Wolf_example.jpg'), 'Набросок волка')
+    media.attach_photo(types.InputFile('./images/examples/example_1.jpg'), 'Деревня Пикассо')
+    media.attach_photo(types.InputFile('./images/examples/example_2.jpg'), 'Акварельная сова')
+    media.attach_photo(types.InputFile('./images/examples/example_3.jpg'), 'Набросок волка')
     await call.message.answer_media_group(media)
 
     await call.message.answer('Понравились примеры? Попробуй сам!\n\n'
